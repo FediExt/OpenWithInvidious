@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Better /kbin Options</title>
+        <style>
+            .body {
+                background-color: #ffffff;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            #instanceInvidious {
+                border: 0px;
+                color: black;
+                padding: 6px;
+                width: 200px;
+                margin: 0px;
+                padding: 0px;
+            }
+            #instanceInvidious:focus {
+                outline: none;
+            }
+            #textbox {
+                background-color: #ffffff;
+                border: 1px solid #cccccc;
+                border-radius: 4px;
+                padding: 6px;
+                width: max-content
+            }
+            #textbox a {
+                color: #999999;
+                font-size: 12px;
+                margin-right: 1px;
+                cursor: default;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            #status {
+                color: red;
+                font-size: 12px;
+                margin-top: 5px;
+            }
+            #save {
+                background-color: #0088FF;
+                border: none;
+                color: white;
+                padding: 8px 16px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        Type your Invidious instance domain here: 
+        <br>
+        <div id="textbox">
+            <a>https://</a><input type="text" id="instanceInvidious" placeholder="e.g. yewtu.be" value="yewtu.be"/>
+        </div>
+        For security reasons, you can only use Invidious instance that has a valid SSL certificate (adress starts with "https").
+        <br>
+        <br>
+        <div id="status"></div>
+        <br>
+        <button id="save">Save</button>
+        <script src="options.js"></script>
+    </body>
+</html>
